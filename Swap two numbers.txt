@@ -1,0 +1,141 @@
+import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      int a, b, temp;
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the First Number: ");
+      a = s.nextInt();
+      System.out.print("Enter the Second Number: ");
+      b = s.nextInt();
+      
+      temp = a;
+      a = b;
+      b = temp;
+      
+      System.out.println("\na = " +a);
+      System.out.println("b = " +b);
+   }
+}
+------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the First Number: ");
+      int a = s.nextInt();
+      System.out.print("Enter the Second Number: ");
+      int b = s.nextInt();
+      
+      System.out.println("\n----Before Swap----");
+      System.out.println("a = " +a);
+      System.out.println("b = " +b);
+      
+      int temp = a;
+      a = b;
+      b = temp;
+      
+      System.out.println("\n----After Swap----");
+      System.out.println("a = " +a);
+      System.out.println("b = " +b);
+   }
+}
+------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the First Number: ");
+      int numOne = s.nextInt();
+      System.out.print("Enter the Second Number: ");
+      int numTwo = s.nextInt();
+      
+      System.out.println("\n----Before Swap----");
+      System.out.println("numOne = " +numOne);
+      System.out.println("numTwo = " +numTwo);
+      
+      numOne = numOne + numTwo;
+      numTwo = numOne - numTwo;
+      numOne = numOne - numTwo;
+      
+      System.out.println("\n----After Swap----");
+      System.out.println("numOne = " +numOne);
+      System.out.println("numTwo = " +numTwo);
+   }
+}
+---------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the First Number: ");
+      int a = s.nextInt();
+      System.out.print("Enter the Second Number: ");
+      int b = s.nextInt();
+      
+      System.out.println("\n----Before Swap----");
+      System.out.println("a = " +a);
+      System.out.println("b = " +b);
+      
+      swap(a, b);
+   }
+   
+   public static void swap(int x, int y)
+   {
+      int z;
+      z = x;
+      x = y;
+      y = z;
+      
+      System.out.println("\n----After Swap----");
+      System.out.println("a = " +x);
+      System.out.println("b = " +y);
+   }
+}
+-------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the First Number: ");
+      int a = s.nextInt();
+      System.out.print("Enter the Second Number: ");
+      int b = s.nextInt();
+      
+      System.out.println("\n----Before Swap----");
+      System.out.println("a = " +a);
+      System.out.println("b = " +b);
+      
+      a = a^b;
+      b = a^b;
+      a = a^b;
+      
+      System.out.println("\n----After Swap----");
+      System.out.println("a = " +a);
+      System.out.println("b = " +b);
+   }
+}
+-------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,31 @@
+public class shpere{      
+    public static void main(String args[])  
+    {  
+    int s=13;  
+   int area_square=s*s;  
+        System.out.println("Area of the square="+area_square);  
+     }  
+}  
+Output:
+
+Area of the square=169
+
+
+----------------------------------------------
+import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      float side, area;
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the Side Length of Square: ");
+      side = s.nextFloat();
+      
+      area = 4*side;
+      System.out.println("\nArea = " +area);
+   }
+}
+-------------------------------------------------------
